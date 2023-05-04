@@ -6,42 +6,42 @@
           menuLinks: [
             {
               name: 'CHARACTERS',
-              url: '/characters',
+              url: '/',
               active: false
             },
             {
               name: 'COMICS',
-              url: '/comics',
+              url: '/',
               active: true
             },
             {
               name: 'MOVIES',
-              url: '/movies',
+              url: '/',
               active: false
             },
             {
               name: 'TV',
-              url: '/tv',
+              url: '/',
               active: false
             },
             {
               name: 'GAMES',
-              url: '/games',
+              url: '/',
               active: false
             },
             {
               name: 'COLLECTIBLES',
-              url: '/collectibles',
+              url: '/',
               active: false
             },
             {
               name: 'VIDEOS',
-              url: '/videos',
+              url: '/',
               active: false
             },
             {
               name: 'FANS',
-              url: '/fans',
+              url: '/',
               active: false
             },
             {
