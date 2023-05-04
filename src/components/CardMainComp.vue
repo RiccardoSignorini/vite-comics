@@ -1,6 +1,7 @@
 <script>
     export default{
         name: "CardMainComp",
+        props: ["Card"]
     }
 </script>
 
