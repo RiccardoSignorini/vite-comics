@@ -110,19 +110,22 @@
 </script>
  
 <template>
-  <CardMainComp v-for="(elem,index) in covers" :key="index" :Card="elem"/> 
+  <div class="d-flex flex-wrap container">
+    <CardMainComp v-for="(elem,index) in covers" :key="index" :card="elem"/> 
+  </div>
+  
 
   <div id="body-second">
-      <div class="container">
-        <div class="d-flex justify-content-around">
-            <div v-for="(elem,index) in solutions" :key="index" class="d-flex align-items-center">
-                <div id="center" class="d-flex align-items-center">
-                    <img :src="elem.url" alt="">
-                    <span>{{ elem.name }}</span>
-                </div>
-            </div>
-        </div>
+    <div class="container">
+      <div class="d-flex justify-content-around">
+          <div v-for="(elem,index) in solutions" :key="index" class="d-flex align-items-center">
+              <div id="center" class="d-flex align-items-center">
+                  <img :src="elem.url" alt="">
+                  <span>{{ elem.name }}</span>
+              </div>
+          </div>
       </div>
+    </div>
   </div>
 </template>
 
