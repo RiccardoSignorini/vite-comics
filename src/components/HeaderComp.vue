@@ -78,37 +78,36 @@
   
 </template>
 
-<style scoped lang="scss">
-  
+<style scoped lang="scss">  
   #header{
     height: 100px;
-  }
-  
-  img{
-    height: 80px;
-  }
 
-  a{
-    text-decoration: none;
-    color: black;
-    font-size: 0.8rem;
-  }
+    img{
+      height: 80px;
+    } 
 
-  li{
+    li{
     list-style-type: none;
     margin-left: 0.8rem;
     line-height: 100px;
-  }
 
-  .selected{
-    border-bottom: 5px solid rgb(0, 136, 245);
-  }
+    a{
+      text-decoration: none;
+      color: black;
+      font-size: 0.8rem;
 
-  .selected a{
-    color: rgb(0, 136, 245);
-  }
+      &:hover{
+        color: rgb(0, 136, 245);
+      }    
+    }  
+    }
+    
+    .selected{
+      border-bottom: 5px solid rgb(0, 136, 245);
 
-  a:hover{
-    color: rgb(0, 136, 245);
-  }
+      a{
+        color: rgb(0, 136, 245);
+      }    
+    }   
+  } 
 </style>

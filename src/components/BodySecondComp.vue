@@ -50,14 +50,18 @@
     height: 100px;
     background-color: rgb(0, 136, 245);
     color: white;
+
+    #center{
+      line-height: 100px;
+
+      img{
+        height: 50px;
+        margin: 0 0.8rem;
+      }    
+    }
   }
 
-  #center{
-    line-height: 100px;
-  }
+  
 
-  img{
-    height: 50px;
-    margin: 0 0.8rem;
-  }
+  
 </style>
