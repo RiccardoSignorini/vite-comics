@@ -11,7 +11,7 @@
 
 <template>
   <div id="footer">
-    <!-- PARTE ALTA FOOTER -->
+    <!-- PARTE LINK FOOTER -->
     <div id="second-bg" class="container d-flex">
       <!-- PRIMA COLONNA -->
       <div>
@@ -121,15 +121,20 @@
 
     </div>  
 
-    <!-- PARTE BASSA FOOTER -->
+    <!-- PARTE SOCIAL FOOTER -->
     <div id="footer-low">
-      <ul>
-        <li>ciao</li>
-        <li>ciao</li>
-        <li>ciao</li>
-        <li>ciao</li>
-        <li>ciao</li>
-      </ul>
+      <div id="social" class="container d-flex align-items-center justify-content-between">
+        <button>SIGN-UP NOW!</button>
+        <div class="d-flex">
+          <h4>FOLLOW US</h4>
+          <img src="/image/footer-facebook.png" alt="">
+          <img src="/image/footer-twitter.png" alt="">
+          <img src="/image/footer-youtube.png" alt="">
+          <img src="/image/footer-pinterest.png" alt="">
+          <img src="/image/footer-periscope.png" alt="">
+        </div>
+      </div>
+      
     </div>
 
   </div>
@@ -137,6 +142,7 @@
 </template>
 
 <style scoped>
+  /* PARTE LINK FOOTER */
   #footer{
     background-image: url('/image/footer-bg.jpg');
   }
@@ -166,8 +172,29 @@
     color: gray;
     font-size: 0.8rem;
   }
-
+  /* PARTE SOCIAL FOOTER */
   #footer-low{
     background-color: rgb(45, 45, 45);
+  }
+
+  #social{
+    height: 100px;
+  }
+
+  button{
+    padding: 0.8rem;
+    background-color: rgb(45, 45, 45);
+    color: white;
+    border: 2px solid rgb(0, 136, 245);
+  }
+
+  h4{
+    color: rgb(0, 136, 245);
+    margin: 0 1rem;
+  }
+
+  img{
+    color: white;
+    margin: 0 0.5rem;
   }
 </style>

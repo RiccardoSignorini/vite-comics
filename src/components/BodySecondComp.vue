@@ -58,5 +58,6 @@
 
   img{
     height: 50px;
+    margin: 0 0.8rem;
   }
 </style>
