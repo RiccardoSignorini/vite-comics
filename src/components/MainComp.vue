@@ -1,6 +1,9 @@
 <script>
   export default{
-      name: "BodySecondComp",
+      name: "MainComp",
+      components: {
+        CardMainComp
+      },
       data(){
         return{
           solutions: [
@@ -28,9 +31,13 @@
         }
       }
     }
+
+    import CardMainComp from "./CardMainComp.vue"
 </script>
 
 <template>
+  <CardMainComp/> 
+
   <div id="body-second">
       <div class="container">
         <div class="d-flex justify-content-around">
