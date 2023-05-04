@@ -31,11 +31,11 @@
 </script>
 
 <template>
-  <div id="BodySecond">
+  <div id="body-second">
       <div class="container">
         <div class="d-flex justify-content-around">
             <div v-for="(elem,index) in solutions" :key="index" class="d-flex align-items-center">
-                <div>
+                <div id="center" class="d-flex align-items-center">
                     <img :src="elem.url" alt="">
                     <span>{{ elem.name }}</span>
                 </div>
@@ -46,10 +46,14 @@
 </template>
 
 <style scoped>
-  #BodySecond{
+  #body-second{
     height: 100px;
     background-color: rgb(0, 136, 245);
     color: white;
+  }
+
+  #center{
+    line-height: 100px;
   }
 
   img{
