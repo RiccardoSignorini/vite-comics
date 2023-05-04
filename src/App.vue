@@ -1,22 +1,22 @@
 <script>
-  import Header from "./components/Header.vue"
-  import BodySecond from "./components/BodySecond.vue"
+  import HeaderComp from "./components/HeaderComp.vue"
+  import BodySecondComp from "./components/BodySecondComp.vue"
 
   export default{
     name: "App",
     components: {
-      Header,
-      BodySecond
+      HeaderComp,
+      BodySecondComp
     }
   }
 </script>
 
 <template>
-  <Header/>
-  <BodySecond/>
+  <HeaderComp/>
+  <BodySecondComp/>
   
 </template>
 
-<style scoped>
+<style>
 
 </style>

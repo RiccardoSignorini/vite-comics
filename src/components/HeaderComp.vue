@@ -1,6 +1,6 @@
 <script>
   export default{
-      name: "Header",
+      name: "HeaderComp",
       data(){
         return{
           menuLinks: [
@@ -12,7 +12,7 @@
             {
               name: 'COMICS',
               url: '/comics',
-              active: false
+              active: true
             },
             {
               name: 'MOVIES',
@@ -64,11 +64,11 @@
   <div>
     <div id="header" class="container d-flex align-items-center justify-content-between">
       <div>
-        <img src="../assets/image/dc-logo.png" alt="">
+        <img src="/image/dc-logo.png" alt="">
       </div>
       <div>
         <ul class="d-flex">
-          <li v-for="(elem, index) in menuLinks" :key="index">
+          <li v-for="(elem, index) in menuLinks" :key="index" :class="elem.active ? 'selected' : ''">
             <a href="elem.url">{{ elem.name }}</a>
           </li>
         </ul>
@@ -97,6 +97,18 @@
   li{
     list-style-type: none;
     margin-left: 0.8rem;
-    height: 100%;
+    line-height: 100px;
+  }
+
+  .selected{
+    border-bottom: 5px solid rgb(0, 136, 245);
+  }
+
+  .selected a{
+    color: rgb(0, 136, 245);
+  }
+
+  a:hover{
+    color: rgb(0, 136, 245);
   }
 </style>

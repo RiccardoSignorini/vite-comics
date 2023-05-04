@@ -1,28 +1,28 @@
 <script>
   export default{
-      name: "BodySecond",
+      name: "BodySecondComp",
       data(){
         return{
           solutions: [
             {
               name: 'DIGITAL COMICS',
-              url: '../assets/image/buy-comics-digital-comics.png',
+              url: '/image/buy-comics-digital-comics.png',
             },
             {
               name: 'DC MERCHANDISE',
-              url: '../assets/image/buy-comics-merchandise.png',
+              url: '/image/buy-comics-merchandise.png',
             },
             {
               name: 'SUBSCRIPTION',
-              url: '../assets/image/buy-comics-subscriptions.png',
+              url: '/image/buy-comics-subscriptions.png',
             },
             {
               name: 'COMIC SHOP LOCATOR',
-              url: '../assets/image/buy-comics-shop-locator.png',
+              url: '/image/buy-comics-shop-locator.png',
             },
             {
               name: 'DC POWER VISA',
-              url: '../assets/image/buy-dc-power-visa.svg',
+              url: '/image/buy-dc-power-visa.svg',
             }
           ]      
         }
@@ -33,10 +33,10 @@
 <template>
   <div id="BodySecond">
       <div class="container">
-        <div class="d-flex justify-content-between">
-            <div v-for="(elem,index) in solutions" :key="index">
-                <div id="alt">
-                    <img src="../assets/image/buy-comics-merchandise.png" alt="">
+        <div class="d-flex justify-content-around">
+            <div v-for="(elem,index) in solutions" :key="index" class="d-flex align-items-center">
+                <div>
+                    <img :src="elem.url" alt="">
                     <span>{{ elem.name }}</span>
                 </div>
             </div>
@@ -50,11 +50,6 @@
     height: 100px;
     background-color: rgb(0, 136, 245);
     color: white;
-  }
-
-  #alt{
-    height: 100px;
-    align-items: center;
   }
 
   img{
