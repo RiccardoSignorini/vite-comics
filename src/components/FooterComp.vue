@@ -141,7 +141,7 @@
   
 </template>
 
-<style scoped>
+<style scoped lang="scss">
   /* PARTE LINK FOOTER */
   #footer{
     background-image: url('/image/footer-bg.jpg');

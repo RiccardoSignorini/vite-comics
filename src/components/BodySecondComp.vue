@@ -45,7 +45,7 @@
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
   #body-second{
     height: 100px;
     background-color: rgb(0, 136, 245);
