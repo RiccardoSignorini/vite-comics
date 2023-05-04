@@ -6,7 +6,7 @@
 </script>
 
 <template>
-    <div class="">
+    <div class="col-2">
         <img :src="card.thumb" alt="">
         <div class="cards text-center">
             <h6>{{ card.series }}</h6>
@@ -18,11 +18,11 @@
 
 <style scoped lang="scss">
     img{
-        width: 180px;
-        height: 250px;
+        width: 11.25rem;
+        height: 15.625rem;
     }
     .cards{
-        width: 180px;
-        margin: 0 0.5rem;
+        width: 11.25rem;
+        color: white;
     }
 </style>

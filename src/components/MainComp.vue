@@ -110,7 +110,7 @@
 </script>
  
 <template>
-  <div class="d-flex flex-wrap container">
+  <div class="d-flex flex-wrap container text-center justify-content-between">
     <CardMainComp v-for="(elem,index) in covers" :key="index" :card="elem"/> 
   </div>
   
@@ -130,6 +130,7 @@
 </template>
 
 <style scoped lang="scss">
+
   #body-second{
     height: 100px;
     background-color: rgb(0, 136, 245);
