@@ -110,14 +110,20 @@
 </script>
  
 <template>
-  <div id="jumbotron">
+  <div id="jumbotron" class="position-relative">
     <!-- background image -->
+    <span class="px-3 py-2 position-absolute">
+      CURRENT SERIES
+    </span>
   </div>
 
   <!-- PROPS SINGOLA CARD CICLATA -->
   <div id="bg-black">
-    <div class="d-flex flex-wrap container text-center justify-content-around p-3">
-      <CardMainComp v-for="(elem,index) in covers" :key="index" :card="elem"/> 
+    <div class="d-flex flex-wrap container text-center justify-content-around p-5">
+      <CardMainComp v-for="(elem,index) in covers" :key="index" :card="elem"/>
+      <button class="px-5 py-2 my-4">
+        LOAD MORE
+      </button>
     </div>  
   </div>
   
@@ -142,11 +148,23 @@
     background-image: url(/image/jumbotron.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    span{
+      color: white;
+      background-color: rgb(0, 136, 245);
+      bottom: -20px;
+    }
+    
   }
 
 
   #bg-black{
-    background-color: rgb(28, 28, 28)
+    background-color: rgb(28, 28, 28);
+    button{
+      background-color: rgb(0, 136, 245);
+      // padding: 0 40px;
+      color: white;
+      border: 0;
+    }
   }
 
   #body-second{
