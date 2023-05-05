@@ -110,11 +110,18 @@
 </script>
  
 <template>
-  <div class="d-flex flex-wrap container text-center justify-content-between">
-    <CardMainComp v-for="(elem,index) in covers" :key="index" :card="elem"/> 
+  <div id="jumbotron">
+    <!-- background image -->
+  </div>
+
+  <!-- PROPS SINGOLA CARD CICLATA -->
+  <div id="bg-black">
+    <div class="d-flex flex-wrap container text-center justify-content-around p-3">
+      <CardMainComp v-for="(elem,index) in covers" :key="index" :card="elem"/> 
+    </div>  
   </div>
   
-
+  
   <div id="body-second">
     <div class="container">
       <div class="d-flex justify-content-around">
@@ -130,6 +137,17 @@
 </template>
 
 <style scoped lang="scss">
+  #jumbotron{
+    height: 400px;
+    background-image: url(/image/jumbotron.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+
+  #bg-black{
+    background-color: rgb(28, 28, 28)
+  }
 
   #body-second{
     height: 100px;
@@ -145,8 +163,5 @@
       }    
     }
   }
-
-  
-
   
 </style>

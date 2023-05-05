@@ -6,12 +6,12 @@
 </script>
 
 <template>
-    <div class="col-2">
+    <div class="col-lg-2 text-center">
         <img :src="card.thumb" alt="">
-        <div class="cards text-center">
+        <div class="icon">
             <h6>{{ card.series }}</h6>
             <p>Type: {{ card.type }}</p>
-            <span>Price: {{ card.price }}</span>
+            <p>Price: {{ card.price }}</p>
         </div>
     </div>
 </template>
@@ -21,8 +21,8 @@
         width: 11.25rem;
         height: 15.625rem;
     }
-    .cards{
-        width: 11.25rem;
+    .icon{
+        width: 13.25rem;
         color: white;
     }
 </style>
